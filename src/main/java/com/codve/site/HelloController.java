@@ -1,9 +1,11 @@
-package com.codve;
+package com.codve.site;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.inject.Inject;
 
 @Controller
 public class HelloController {
@@ -21,6 +23,7 @@ public class HelloController {
         return this.greetingService.getGreeting(name);
     }
 
+    @Inject
     public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
