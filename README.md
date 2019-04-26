@@ -1,2 +1,2 @@
 # Start-Spring-Template
-the common template for starting spring-framework.
+### 使用纯java的方式启动Spring.
